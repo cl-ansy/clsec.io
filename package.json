@@ -1,12 +1,14 @@
 {
   "name": "clsec.io",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker-build": "docker build -t clsec.io .",
+    "docker-run": "docker run -p 3000:3000 clsec.io"
+
   },
   "dependencies": {
     "next": "11.0.0",
